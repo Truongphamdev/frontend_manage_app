@@ -102,6 +102,7 @@ const UserList = () => {
       setAdmin(response.admins || []);
       setSupplier(response.suppliers || []);
       setCustomer(response.customers || []);
+      console.log("Fetched users:", response);
     } catch (error) {
       console.error("Error fetching users:", error);
       setAdmin([]);
